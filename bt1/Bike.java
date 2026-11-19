@@ -13,16 +13,34 @@ public class Bike {
              loai_xe = "xe may";
              gia_ban = 4500;
         }
+
         Bike(int gia,String mau){
             this.mau_sac = mau;
             this.gia_ban = gia;
         }
+
         Bike(int gia, String mau, String kichthuoc, String thuonghieu, String loai){
             this.gia_ban = gia;
             this.mau_sac = mau;
             this.kich_thuoc = kichthuoc;
             this.thuong_hieu = thuonghieu;
             this.loai_xe = loai;
+        }
+
+
+        // method không tham số <void>
+        void InThongTinXe()
+        {
+            System.out.println("xe so 3 dung void");
+            System.out.println(this.gia_ban);
+        }
+        void inthongtin() {
+            System.out.println("xe so  4");
+            System.out.println("Mau sac: " + this.mau_sac);
+            System.out.println("Kich thuoc: " + this.kich_thuoc);
+            System.out.println("Thuong hieu: " + this.thuong_hieu);
+            System.out.println("Loai xe: " + this.loai_xe);
+            System.out.println("Gia ban: " + this.gia_ban);
         }
         public static void main(String[] a){
             Bike myBike = new Bike();
@@ -40,6 +58,11 @@ public class Bike {
             System.out.println("Thuong hieu: " + bike_3.thuong_hieu);
             System.out.println("Loai xe: " + bike_3.loai_xe);
             System.out.println("Gia: " + bike_3.gia_ban);
+
+            bike_3.InThongTinXe();
+
+            Bike bike_4 = new Bike(5000000, "Trang", "Nho", "Ducati", "Xe the thao");
+            bike_4.inthongtin();
         }
         
     }
