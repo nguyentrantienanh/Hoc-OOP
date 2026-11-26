@@ -5,6 +5,7 @@ class Bike {
         public String thuong_hieu;
         public String loai_xe;
         public double gia_ban;
+        private double gia;
 
         public Bike(){
              mau_sac = "mau huong canh xen";
@@ -72,8 +73,8 @@ class Bike {
             // XE SỐ 5 Private
             System.out.println("xe so 5: ");
             Bike bike_5 = new Bike();
-            bike_5.gia_ban = 2500000;
-            // System.out.println("Gia xe 5 (private): " + bike_5.gia_ban);
+            bike_5.gia = 250000;
+            System.out.println("Gia xe 5 (private): " + bike_5.gia);
             bike_5.InThongTin();
     }
 }
