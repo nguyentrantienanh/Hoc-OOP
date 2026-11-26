@@ -44,6 +44,14 @@ class Bike {
             System.out.println("Gia ban: " + this.gia_ban);
         }
 
+        // thêm methods lock và unlock
+        // public void lock() {
+        //     System.out.println("Tat / khoa xe");
+        // }
+
+        // public void unlock() {
+        //     System.out.println("Mo khoa xe");
+        // }
         // private InThongTin
         private void InThongTin() {
             System.out.println("Day la xe dap");
@@ -76,5 +84,7 @@ class Bike {
             bike_5.gia = 250000;
             System.out.println("Gia xe 5 (private): " + bike_5.gia);
             bike_5.InThongTin();
+            // bike_5.lock();
+            // bike_5.unlock();            
     }
 }
