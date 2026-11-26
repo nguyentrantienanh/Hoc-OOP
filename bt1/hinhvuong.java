@@ -1,9 +1,16 @@
 
-public class HinhVuong {
-    int TinhDienTich(int canh) {
+class Main {
+     public static void main(String[] a)
+     {
+        System.out.println("Dien tich la: " + HinhVuong.TinhDienTich(4));
+     }
+}
+
+class HinhVuong {
+    static int TinhDienTich(int canh) {
         int dien_tich;
         dien_tich = canh * canh;
-        return dien_tich;
+        return dien_tich;   
     }
     int TinhChuVi(int canh){
         int chu_vi;
